@@ -1,11 +1,11 @@
-# Command line
-ansible-playbook -s install_ss.yml -i ./inventory/hosts
-ansible-playbook -s insall_ss.yml -i ./inventory/hosts --limit xbox
+# About the repo:
+a ansible script to setup a shadowsocks in Ubuntu server
+
+## Command line
+`ansible-playbook -s install_ss.yml -i ./inventory/hosts`
+
+`ansible-playbook -s insall_ss.yml -i ./inventory/hosts --limit xbox`
+
 ---
 
-# Example data load from winston json
-curl -XPOST http://40.115.79.157:8080 --data-binary @filename
-
-# open port 80 for http input(logstash)
-
-sudo setcap 'cap_net_bind_service=+ep' /usr/lib/jvm/java-8-oracle/jre/bin/java
+Configure the ssh to server setting to your own server*`./inventory/hosts`*, in my case I used Linode.
