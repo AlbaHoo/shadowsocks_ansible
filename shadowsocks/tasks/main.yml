@@ -1,0 +1,26 @@
+# tasks file for shadowsocks
+- name: Install python-pip
+  apt:
+    name: python-pip
+    state: present
+
+- name: Install python-m2crypto
+  apt:
+    name: python-m2crypto
+    state: present
+
+- name: Install shadowsocks.
+  pip: "name={{ item }}"
+  with_items:
+    - shadowsocks
+
+# configure the ss server params
+- name: configure...
+  template: >-
+    src=etc/configure.json
+    dest=/etc/shadowsocks.json
+
+# run the command
+- name: start the ssserver...
+  command: '/usr/local/bin/ssserver -c /etc/shadowsocks.json -d start'
+

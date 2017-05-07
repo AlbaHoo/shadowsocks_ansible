@@ -1,0 +1,6 @@
+# ansible-playbook -s elk.yml -i ./inventory/hosts
+---
+- hosts: linode
+  roles:
+    # install shadowsocks
+    - role: shadowsocks

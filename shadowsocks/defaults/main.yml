@@ -1,0 +1,8 @@
+# defaults file for shadowsocks
+---
+ss_version: "4.6"
+server_ip: "172.104.70.232"
+server_port: 8000
+local_port: 1080
+server_communication_password: "huwenyue"
+encription_method: "aes-256-cfb"

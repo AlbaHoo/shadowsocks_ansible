@@ -1,0 +1,6 @@
+
+[servers]
+linode ansible_user=root ansible_host=172.104.70.232 ansible_ssh_pass=dqh725
+
+[xbox]
+xbox ansible_user=dqh725 ansible_host=192.168.56.101 ansible_become_pass=albahoo

@@ -1,0 +1,8 @@
+{
+  "server": "{{server_ip}}",
+  "server_port": {{server_port}},
+  "local_port": {{local_port}},
+  "password": "{{server_communication_password}}",
+  "timeout": 600,
+  "method": "{{encription_method}}"
+}
